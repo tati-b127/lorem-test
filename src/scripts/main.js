@@ -11,6 +11,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const orderForm = document.querySelector(".order__form");
   const btnBusiness = document.querySelector(".business__btn_order");
   const businessBlock = document.getElementById("order");
+  const menuBtn = document.querySelector(".menu");
+  const menuList = document.querySelector(".header__list");
+  const headerLinks = document.querySelectorAll(".header__link");
 
   inputFile.addEventListener("change", loadFile);
   inputRange.addEventListener("change", changePercent);
@@ -19,6 +22,16 @@ document.addEventListener("DOMContentLoaded", () => {
   if (inputFile.files.length > 0) {
     inputFileLabel.innerText = "Выбрано файлов: " + inputFile.files.length;
   }
+  menuBtn.addEventListener("click", () => {
+    menuBtn.classList.toggle("open");
+    menuList.classList.toggle("open");
+  });
+  headerLinks.forEach((item) => {
+    item.addEventListener("click", () => {
+      menuList.classList.remove("open");
+    });
+  });
+
   btnBusiness.addEventListener("click", () => {
     const heightHeader = document.querySelector(".header").clientHeight;
     // console.log(heightHeader);
@@ -36,7 +49,6 @@ document.addEventListener("DOMContentLoaded", () => {
     else inputFileLabel.innerText = "Прикрепить файл";
   }
   function changePercent() {
-    console.log(this.value);
     percentVal.innerText = `${this.value} %`;
   }
   function validationForm() {
