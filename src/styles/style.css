@@ -152,10 +152,15 @@ input {
     position: fixed;
     top: 0;
     width: 100%;
+    height: 100px;
     background-color: var(--color10101D);
     padding: 38px 0;
     z-index: 1000;
 }
+.scroll-top {
+    scroll-margin-top: 100px;
+}
+
 
 .header__container {
     display: flex;
@@ -166,8 +171,6 @@ input {
 .header__logo {
     width: 247px;
 }
-
-.header__nav {}
 
 .header__list {
     display: flex;
@@ -194,8 +197,6 @@ input {
     color: var(--color43ABF0);
 }
 
-.main {}
-
 .main__business {
     background-image: url('../images/bgdesktop.webp');
     background-position: right top;
@@ -203,8 +204,6 @@ input {
     background-repeat: no-repeat;
     padding: 203px 0 340px;
 }
-
-.business {}
 
 .business__block {
     max-width: 720px;
@@ -240,7 +239,7 @@ input {
     margin-bottom: 80px;
 }
 
-.business__item {
+.business__item h2{
     font-size: 20px;
     font-weight: 400;
     padding-left: 6px;
@@ -255,8 +254,6 @@ input {
     align-items: center;
 }
 
-.btn {}
-
 .business__btn:first-child {
     margin-right: 30px;
 }
@@ -266,7 +263,6 @@ input {
     border-color: var(--color3E9CDC);
     background-color: var(--colorffffff);
     color: var(--color3E9CDC);
-
 }
 
 .business__btn:first-child {
@@ -333,7 +329,7 @@ input {
     width: calc(100% - 120px);
     border-bottom: 10px dotted var(--color6F6D7B);
     height: 10px;
-    margin: 0 50px;
+    margin: 0 60px;
     top: 50px;
 }
 .order__item {
@@ -368,8 +364,6 @@ input {
     text-align: center;
 }
 
-.order__form {}
-
 .form {
     width: 100%;
     display: grid;
@@ -397,6 +391,12 @@ input {
     border: 1px solid var(--colorffffff);
     height: 48px;
     outline: none;
+    transition: all 0.3s ease-in-out;
+}
+.order__input:focus-within,
+.order__select:focus-within {
+    background-color: var(--colorffffff);
+    border: 1px solid var(--color3E9CDC);
 }
 
 .order__label {
@@ -521,8 +521,6 @@ input[type=range]::-moz-range-thumb {
     justify-content: space-between;
     align-items: center;
 }
-
-.footer__left {}
 
 .footer__copy {
     font-size: 13px;
@@ -743,8 +741,12 @@ input[type=range]::-moz-range-thumb {
 
     .header {
         padding: 20px 0;
+        height: 80px;
     }
-
+    .scroll-top {
+        scroll-margin-top: 80px;
+    }
+    
     .header__logo {
         width: 220px;
     }
@@ -802,7 +804,7 @@ input[type=range]::-moz-range-thumb {
         font-size: 16px;
     }
 
-    .business__item {
+    .business__item h2 {
         font-size: 14px;
     }
 

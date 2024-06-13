@@ -29,7 +29,7 @@
         </div>
     </header>
     <main class="main">
-        <section class="main__business business" id="business">
+        <section class="main__business business scroll-top" id="business">
             <div class="container">
                 <div class="business__block">
                     <h1 class="business__title"><span>Lorem ipsum</span> dolor sit amet
@@ -39,9 +39,9 @@
                         At vero eos et accusamus et iusto odio dignissimos ducimus!
                     </p>
                     <ul class="business__list">
-                        <li class="business__item">Totam rem aperiam eaque ipsa</li>
-                        <li class="business__item">Sit voluptatem accusantium doloremque laudantium</li>
-                        <li class="business__item">Sed ut perspiciatis, unde omnis iste natus error</li>
+                        <li class="business__item"><h2>Totam rem aperiam eaque ipsa</h2></li>
+                        <li class="business__item"><h2>Sit voluptatem accusantium doloremque laudantium</h2></li>
+                        <li class="business__item"><h2>Sed ut perspiciatis, unde omnis iste natus error</h2></li>
                     </ul>
                     <div class="business__actions">
                         <button class="btn business__btn business__btn_order">Заказать</button>
@@ -50,7 +50,7 @@
                 </div>
             </div>
         </section>
-        <section class="main__order order" id="order">
+        <section class="main__order order scroll-top" id="order">
             <div class="container order__container">
                 <h2 class="order__title">Оформление <span>Заказа</span></h2>
                 <p class="order__descr">Перед заполнением формы ознакомьтесь с нашей схемой работы!</p>
@@ -64,7 +64,7 @@
                                     fill="white" />
                             </svg>
                         </div>
-                        <p class="order__text">Lorem ipsum dolor sit amet</p>
+                        <h3 class="order__text">Lorem ipsum dolor sit amet</h3>
                     </li>
                     <li class="order__item">
                         <div class="order__icon">
@@ -75,7 +75,7 @@
                                     fill="white" />
                             </svg>
                         </div>
-                        <p class="order__text">Сonsectetur adipiscing elit</p>
+                        <h3 class="order__text">Сonsectetur adipiscing elit</h3>
                     </li>
                     <li class="order__item">
                         <div class="order__icon">
@@ -95,7 +95,7 @@
                                     fill="white" />
                             </svg>
                         </div>
-                        <p class="order__text">Sed do eiusmod tempor</p>
+                        <h3 class="order__text">Sed do eiusmod tempor</h3>
                     </li>
                     <li class="order__item">
                         <div class="order__icon">
@@ -106,7 +106,7 @@
                                     fill="white" />
                             </svg>
                         </div>
-                        <p class="order__text">Esse cillum dolore eu fugiat</p>
+                        <h3 class="order__text">Esse cillum dolore eu fugiat</h3>
                     </li>
                     <li class="order__item">
                         <div class="order__icon">
@@ -117,7 +117,7 @@
                                     fill="white" />
                             </svg>
                         </div>
-                        <p class="order__text">Excepteur sint occaecat cupidatat non proident</p>
+                        <h3 class="order__text">Excepteur sint occaecat cupidatat non proident</h3>
                     </li>
                 </ul>
                 <form class="order__form form" action="#" method="post">
@@ -140,10 +140,10 @@
                     </div>
                     <div class="form__block-range">
                         <label for="range" class="form__range">
-                            <div class="form__label-range">
+                            <span class="form__label-range">
                                 <span>Sed ut perspiciatis, unde omnis iste natus</span>
                                 <span id="percent-value">75%</span>
-                            </div>
+                            </span>
                             <input type="range" min="1" max="100" name="range" value="75" class="order__range"
                                 id="range">
                         </label>
@@ -192,8 +192,7 @@
                                 </clipPath>
                             </defs>
                         </svg>
-                        <a href="https://oplata.qiwi.com/create?publicKey=5nAq6abtyCz4tcDj89e5w7Y5i524LAFmzrsN6bQTQ3ceEvMvCq55ToeErzhvK6rVkQLaCrYUQcYF5QkS8nCrjnPsLQgsLxqrpQgJ7hg2ZHmEHXFjaG8qjvgcep&extras[cf1]=Order_123&extras[cf3]=winnie@pooh.ru&readonly_extras=cf1&comment=some%20comment&amount=100.00
-                        " class="footer__link">Qiwi wallet</a>
+                        <a href="https://qiwi.com/payment" class="footer__link" target="_blank">Qiwi wallet</a>
                     </li>
                     <li class="footer__item">
                         <svg class="yamoney" width="21" height="20" viewBox="0 0 21 20" fill="none"
@@ -208,16 +207,7 @@
                                 d="M9.5904 8.20678C10.0361 7.68017 10.687 7.4943 11.0443 7.79166C11.4017 8.08909 11.3303 8.75713 10.8846 9.28374C10.4392 9.81029 9.78811 9.99596 9.43072 9.69853C9.07333 9.40117 9.14497 8.73327 9.5904 8.20672V8.20678Z"
                                 fill="#231F20" />
                         </svg>
-                        <a href="https://money.yandex.ru/quickpay/confirm.xml" class="footer__link">Yandex Money</a>
-                        <!-- <form id="pay" action="https://money.yandex.ru/quickpay/confirm.xml" method="post">
-                            <input type="text" name="targets">
-                            <input type="text" name="sum">
-                            <input type="hidden" name="receiver" value="435824873316172">
-                            <input type="hidden" name="quickpay-form" value="shop">
-                            <input type="hidden" name="paymentType" value="PC">
-                            <input type="hidden" name="successURL" value="http://mysite.ru/success.html">
-                            <input type="submit" value="Оплатить">
-                          </form> -->
+                        <a href="https://yoomoney.ru/yooid/signin/step/login?origin=Wallet&returnUrl=https%3A%2F%2Fyoomoney.ru%2Fpage%3Fid%3D536308" target="_blank" class="footer__link">Yandex Money</a>
                     </li>
                     <li class="footer__item">
                         <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -233,15 +223,8 @@
                             </defs>
                         </svg>
 
-                        <a href="https://merchant.webmoney.ru/lmi/payment.asp" class="footer__link">Web Money</a>
+                        <a href="https://merchant.webmoney.ru/lmi/payment.asp" class="footer__link" target="_blank">Web Money</a>
 
-                        <!-- <form method="post" action="https://merchant.webmoney.ru/lmi/payment.asp">
-                            <input name="LMI_PAYMENT_AMOUNT" value="{%itogo%}" type="hidden">
-                            <input name="LMI_PAYMENT_DESC_BASE64" value="000000000000000000000000000000000" type="hidden">
-                            <input name="LMI_PAYEE_PURSE" value="R123123123" type="hidden">
-                            <input class="wmbtn" 
-                                value="Оплатить" type="submit">
-                        </form> -->
                     </li>
                 </ul>
             </div>
@@ -253,7 +236,7 @@
                                 d="M16.7503 14.8491C16.7503 14.9914 16.6248 15.117 16.4825 15.117H4.16106C4.01876 15.117 3.89321 14.9914 3.89321 14.8491V8.42057C4.06899 8.62146 4.26151 8.80561 4.47077 8.97302C5.66776 9.89378 6.87312 10.8313 8.03662 11.8023C8.66441 12.3296 9.44287 12.9741 10.3134 12.9741H10.3218H10.3301C11.2007 12.9741 11.9791 12.3296 12.6069 11.8023C13.7704 10.8313 14.9758 9.89378 16.1728 8.97302C16.382 8.80561 16.5746 8.62146 16.7503 8.42057V14.8491ZM16.7503 6.05171C16.7503 6.7632 16.064 7.69233 15.5199 8.11923C14.3982 8.99813 13.2766 9.88541 12.1633 10.7727C11.7197 11.1326 10.9161 11.9027 10.3301 11.9027H10.3218H10.3134C9.72747 11.9027 8.9239 11.1326 8.48026 10.7727C7.36698 9.88541 6.24533 8.99813 5.12367 8.11923C4.37033 7.52492 3.89321 6.69624 3.89321 5.742C3.89321 5.5997 4.01876 5.47414 4.16106 5.47414H16.4825C16.8006 5.47414 16.7503 5.84244 16.7503 6.05171ZM17.8218 5.742C17.8218 5.00539 17.2191 4.40271 16.4825 4.40271H4.16106C3.42446 4.40271 2.82178 5.00539 2.82178 5.742V14.8491C2.82178 15.5857 3.42446 16.1884 4.16106 16.1884H16.4825C17.2191 16.1884 17.8218 15.5857 17.8218 14.8491V5.742Z"
                                 fill="#3E9CDC" />
                         </svg>
-                        <a class="footer__link" href="mailto:info@ipsum228.com">info@ipsum228.com</a>
+                        <a class="footer__link" href="mailto:info@ipsum228.com" target="_blank">info@ipsum228.com</a>
                     </li>
                     <li class="footer__item">
                         <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -261,7 +244,7 @@
                                 d="M15.1804 12.2863C15.1804 12.9366 15.0574 13.5079 14.8113 14.0001C14.5652 14.4923 14.2341 14.8995 13.8181 15.2218C13.3259 15.6085 12.7839 15.8839 12.1921 16.048C11.6062 16.212 10.8591 16.2941 9.95093 16.2941H4.71265V3.20715H9.33569C10.2966 3.20715 11.0232 3.24524 11.5154 3.32141C12.0134 3.39172 12.4792 3.54407 12.9128 3.77844C13.3816 4.0304 13.7302 4.36731 13.9587 4.78918C14.1931 5.21106 14.3103 5.69739 14.3103 6.24817C14.3103 6.88684 14.1492 7.4552 13.8269 7.95325C13.5105 8.45129 13.071 8.8175 12.5085 9.05188V9.12219C13.3171 9.29211 13.9646 9.64075 14.4509 10.1681C14.9373 10.6896 15.1804 11.3956 15.1804 12.2863ZM10.9705 6.90735C10.9705 6.69641 10.9148 6.47961 10.8035 6.25696C10.698 6.0343 10.531 5.87317 10.3025 5.77356C10.0857 5.67981 9.82788 5.63 9.52905 5.62415C9.23608 5.61243 8.79663 5.60657 8.21069 5.60657H7.98218V8.37512H8.39526C8.95776 8.37512 9.35034 8.36926 9.573 8.35754C9.80151 8.34583 10.0359 8.2843 10.2761 8.17297C10.5398 8.04993 10.7214 7.88 10.821 7.66321C10.9207 7.44641 10.9705 7.19446 10.9705 6.90735ZM11.7966 12.2247C11.7966 11.8204 11.7146 11.504 11.5505 11.2755C11.3865 11.047 11.1404 10.8741 10.8123 10.757C10.613 10.6808 10.3376 10.6398 9.98608 10.6339C9.64038 10.6222 9.17456 10.6163 8.58862 10.6163H7.98218V13.8947H8.15796C9.01343 13.8947 9.60522 13.8888 9.93335 13.8771C10.2615 13.8654 10.5955 13.7863 10.9353 13.6398C11.2341 13.5109 11.4509 13.3234 11.5857 13.0773C11.7263 12.8253 11.7966 12.5411 11.7966 12.2247Z"
                                 fill="#3E9CDC" />
                         </svg>
-                        <a class="footer__link" target="_blank" href="https://vk.com/">Мы вконтакте</a>
+                        <a class="footer__link" target="_blank" href="https://vk.com/" >Мы вконтакте</a>
                     </li>
                 </ul>
             </div>
