@@ -29,6 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
   headerLinks.forEach((item) => {
     item.addEventListener("click", () => {
       menuList.classList.remove("open");
+      menuBtn.classList.remove("open");
     });
   });
 

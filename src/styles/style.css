@@ -329,7 +329,7 @@ input {
 .order__list::after {
     position: absolute;
     content: '';
-    width: calc(100% - 100px);
+    width: calc(100% - 120px);
     border-bottom: 10px dotted var(--color6F6D7B);
     height: 10px;
     margin: 0 50px;
@@ -677,6 +677,9 @@ input[type=range]::-moz-range-thumb {
         display: inline-block;
         font-size: 24px;
     }
+    .main__business {
+        background-image: linear-gradient(90deg, #ffffffe3, #ffffffa3), url("../images/bgdesktop.webp");
+    }
 
     .business__title {
         font-size: 36px;
@@ -756,7 +759,7 @@ input[type=range]::-moz-range-thumb {
 
     .main__business {
         padding: 160px 0 80px;
-        background-image: linear-gradient(90deg, #ffffffc7, #33333300), url("../images/bgmob.webp");
+        background-image: linear-gradient(90deg, #ffffffe3, #ffffffa3), url("../images/bgmob.webp");
     }
 
     .main__order {
